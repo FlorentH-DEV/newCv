@@ -1,0 +1,83 @@
+/* ============================================
+   APP GLOBAL STYLES
+   ============================================ */
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--color-neutral-light);
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Smooth scroll behavior for all sections */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Remove default link underlines except in text content */
+a {
+  text-decoration: none;
+}
+
+/* Ensure images are responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Ensure buttons have proper cursor */
+button {
+  cursor: pointer;
+}
+
+/* Remove default list styles */
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Ensure proper line-height for better readability */
+body {
+  line-height: 1.6;
+}
+
+/* Accessibility: Focus visible states */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Smooth transitions for all interactive elements */
+button,
+a,
+input,
+textarea,
+select {
+  transition: all var(--transition-fast);
+}
+
+/* Print styles */
+@media print {
+  .header,
+  .contact-ctas {
+    display: none;
+  }
+
+  body {
+    background-color: white;
+  }
+
+  section {
+    page-break-inside: avoid;
+  }
+}

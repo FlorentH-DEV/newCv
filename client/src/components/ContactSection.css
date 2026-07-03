@@ -1,0 +1,256 @@
+/* ============================================
+   CONTACT SECTION - FLEXBOX ONLY
+   ============================================ */
+
+.contact-section {
+  background-color: var(--color-primary);
+  color: white;
+  padding: var(--spacing-2xl) 0 0 0;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2xl);
+  padding: var(--spacing-2xl) 0;
+}
+
+/* ============================================
+   CONTACT HEADER
+   ============================================ */
+.contact-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  text-align: center;
+}
+
+.contact-header h2 {
+  color: white;
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 2.5rem);
+}
+
+.contact-subtitle {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ============================================
+   CONTACT INFO GRID
+   ============================================ */
+.contact-info-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-lg);
+  justify-content: center;
+  margin: var(--spacing-lg) 0;
+}
+
+.contact-info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg);
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  min-width: 200px;
+  transition: all var(--transition-normal);
+}
+
+.contact-info-card:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: var(--color-accent);
+  transform: translateY(-4px);
+}
+
+.contact-icon {
+  font-size: 2rem;
+}
+
+.contact-info-card h3 {
+  color: white;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.contact-link {
+  color: var(--color-accent);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.contact-link:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.contact-text {
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* ============================================
+   CONTACT CTAs
+   ============================================ */
+.contact-ctas {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-md);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact-ctas .btn {
+  font-size: 1rem;
+  padding: var(--spacing-sm) var(--spacing-lg);
+}
+
+/* ============================================
+   INTERESTS SECTION
+   ============================================ */
+.interests-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  text-align: center;
+  padding: var(--spacing-lg) 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.interests-section h3 {
+  color: white;
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.interests-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  justify-content: center;
+}
+
+.interest-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-xs) var(--spacing-md);
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all var(--transition-fast);
+}
+
+.interest-tag:hover {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-lg);
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+.footer {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: var(--spacing-lg) 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-lg);
+}
+
+.footer-text {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: var(--spacing-xl) 0 0 0;
+  }
+
+  .contact-wrapper {
+    gap: var(--spacing-xl);
+    padding: var(--spacing-xl) 0;
+  }
+
+  .contact-header h2 {
+    font-size: 1.75rem;
+  }
+
+  .contact-subtitle {
+    font-size: 1rem;
+  }
+
+  .contact-info-grid {
+    gap: var(--spacing-md);
+  }
+
+  .contact-info-card {
+    min-width: 100%;
+    padding: var(--spacing-md);
+  }
+
+  .contact-ctas {
+    flex-direction: column;
+  }
+
+  .contact-ctas .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer .container {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    text-align: center;
+  }
+
+  .footer-text {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .contact-icon {
+    font-size: 1.5rem;
+  }
+
+  .contact-info-card h3 {
+    font-size: 1rem;
+  }
+
+  .interests-list {
+    gap: var(--spacing-sm);
+  }
+
+  .interest-tag {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+  }
+}

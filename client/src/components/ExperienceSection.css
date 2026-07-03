@@ -1,0 +1,269 @@
+/* ============================================
+   EXPERIENCE SECTION - FLEXBOX ONLY
+   ============================================ */
+
+.experience-section {
+  background-color: white;
+  padding: var(--spacing-2xl) 0;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: var(--spacing-2xl);
+  text-align: left;
+}
+
+.section-header h2 {
+  margin-bottom: var(--spacing-md);
+}
+
+.section-subtitle {
+  font-size: 1.125rem;
+  color: var(--color-text-secondary);
+  max-width: 600px;
+}
+
+/* ============================================
+   EXPERIENCE TIMELINE
+   ============================================ */
+.experience-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+  position: relative;
+}
+
+/* Timeline vertical line */
+.experience-timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, var(--color-accent) 0%, transparent 100%);
+  transform: translateX(-50%);
+}
+
+/* ============================================
+   EXPERIENCE CARD
+   ============================================ */
+.experience-card {
+  position: relative;
+  width: 48%;
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.experience-card.left {
+  margin-left: 0;
+  margin-right: auto;
+  text-align: right;
+}
+
+.experience-card.right {
+  margin-left: auto;
+  margin-right: 0;
+  text-align: left;
+}
+
+/* Timeline dot */
+.experience-card::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: var(--color-accent);
+  border: 3px solid white;
+  border-radius: 50%;
+  top: 24px;
+  box-shadow: var(--shadow-md);
+}
+
+.experience-card.left::after {
+  right: -40px;
+}
+
+.experience-card.right::after {
+  left: -40px;
+}
+
+.experience-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.experience-card.left .experience-header {
+  flex-direction: row-reverse;
+}
+
+.experience-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.experience-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0;
+}
+
+.experience-company {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  margin: 0;
+}
+
+.experience-period {
+  display: flex;
+  align-items: center;
+}
+
+.period-badge {
+  display: inline-block;
+  padding: var(--spacing-xs) var(--spacing-md);
+  background-color: rgba(0, 212, 255, 0.1);
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius-md);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.experience-location {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-md);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.experience-card.left .experience-location {
+  justify-content: flex-end;
+}
+
+.experience-card.right .experience-location {
+  justify-content: flex-start;
+}
+
+/* ============================================
+   HIGHLIGHTS
+   ============================================ */
+.experience-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.highlight-item {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-sm);
+  align-items: flex-start;
+}
+
+.experience-card.left .highlight-item {
+  flex-direction: row-reverse;
+}
+
+.highlight-dot {
+  display: flex;
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-accent);
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+
+.highlight-item p {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 1024px) {
+  .experience-timeline::before {
+    left: 0;
+  }
+
+  .experience-card {
+    width: 100%;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    text-align: left !important;
+    padding-left: var(--spacing-lg);
+  }
+
+  .experience-card.left,
+  .experience-card.right {
+    text-align: left;
+  }
+
+  .experience-card::after {
+    left: -24px !important;
+    right: auto !important;
+  }
+
+  .experience-header {
+    flex-direction: row !important;
+  }
+
+  .experience-highlight-item {
+    flex-direction: row !important;
+  }
+
+  .highlight-dot {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-section {
+    padding: var(--spacing-xl) 0;
+  }
+
+  .section-header {
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .experience-timeline {
+    gap: var(--spacing-lg);
+  }
+
+  .experience-card {
+    padding: var(--spacing-md) !important;
+  }
+
+  .experience-title {
+    font-size: 1.1rem;
+  }
+
+  .experience-header {
+    flex-direction: column !important;
+    gap: var(--spacing-sm);
+  }
+
+  .period-badge {
+    font-size: 0.7rem;
+  }
+
+  .highlight-item p {
+    font-size: 0.9rem;
+  }
+}
