@@ -8,7 +8,7 @@ const projects = [
     id: 1,
     title: 'Systèmes Robotisés Autonomes',
     description: 'Conception et développement complets d\'une infrastructure matérielle et logicielle pour robots de paillage et d\'alimentation autonomes.',
-    technologies: ['Siemens', 'Python', 'Embedded C', 'IoT'],
+    technologies: ['Siemens', 'Python', 'ReactJS', 'IoT'],
     highlights: [
       'Architecture flux de données',
       'Intégration composants matériels',
@@ -20,7 +20,7 @@ const projects = [
     id: 2,
     title: 'Supervision Multi-Systèmes',
     description: 'Application de supervision centralisée pour la coordination de plusieurs robots avec prévention des collisions et gestion des priorités.',
-    technologies: ['ReactJS', 'NestJS', 'Real-time Data', 'WebSockets'],
+    technologies: ['ReactJS', 'Python', 'Real-time Data', 'WebSockets'],
     highlights: [
       'Interface de supervision temps réel',
       'Gestion des priorités',
@@ -32,7 +32,7 @@ const projects = [
     id: 3,
     title: 'ERP Métier Personnalisé',
     description: 'Conception et développement d\'un système ERP complet pour la gestion des stocks, commandes et suivi opérationnel.',
-    technologies: ['JavaScript', 'Flask', 'PostgreSQL', 'REST API'],
+    technologies: ['ReactJs', 'NestJS', 'PostgreSQL', 'REST API'],
     highlights: [
       'Gestion des stocks',
       'Alertes automatiques',
