@@ -1,7 +1,7 @@
 import './ProjectsSection.css';
-import imgSystRobotiserAutonome from '../../image/image_systeme_robotiser_autonome.webp'
-import imgSuspervisionMultiSystem from '../../image/image_supervision_multi_systèmes.webp'
-import imgErpMetier from '../../image/erpMetier.webp'
+import imgSystRobotiserAutonome from '../../image/image_systeme_robotiser_autonome.png'
+import imgSuspervisionMultiSystem from '../../image/image_supervision_multi_systèmes.png'
+import imgErpMetier from '../../image/erpMetier.png'
 
 const projects = [
   {

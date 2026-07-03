@@ -71,14 +71,14 @@ export default function SkillsSection() {
             <div className="certification-item flex-row">
               <span className="cert-icon">🎓</span>
               <div className="cert-content flex-col">
-                <span className="cert-title">Manager de Systèmes Informatique et Robotique</span>
+                <span className="cert-title">(BAC + 5) Manager de Systèmes Informatique et Robotique</span>
                 <span className="cert-detail">École IMERIR, Perpignan | 2017 - 2020</span>
               </div>
             </div>
             <div className="certification-item flex-row">
               <span className="cert-icon">🎓</span>
               <div className="cert-content flex-col">
-                <span className="cert-title">BTS CRSA (Conception et Réalisation de Systèmes Automatiques)</span>
+                <span className="cert-title">(BAC + 2) BTS CRSA (Conception et Réalisation de Systèmes Automatiques)</span>
                 <span className="cert-detail">École Louis Rascol, Albi | 2016</span>
               </div>
             </div>

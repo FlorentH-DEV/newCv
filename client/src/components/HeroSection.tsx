@@ -1,5 +1,5 @@
 import './HeroSection.css';
-import imgHero from '../../image/imageHero.webp'
+import imgHero from '../../image/imageHero.png'
 
 export default function HeroSection() {
   return (
